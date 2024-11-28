@@ -33,6 +33,7 @@ class DownloadsViewController: UIViewController {
         NotificationCenter.default.addObserver(forName: NSNotification.Name("Downloaded"), object: nil, queue: nil) { _ in
             self.fetchLocalStorageForDownload()
         }
+        print("Testing")
      }
     
     private func fetchLocalStorageForDownload() {
